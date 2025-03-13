@@ -11,22 +11,27 @@
     <script src="week1/scripts/dates.js" defer> </script>
     <script src="week1/scripts/menu.js" defer></script>
     <script src="week1/scripts/navigate.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="profile">
             <img src="week1/images/benny.jpg" alt="Profile Picture">
             <h1>Benedict Nwanze</h1>
+            <button type="button" id="menu" aria-label="hamburger-menu"></button>
+            <!-- Hidden on mobile -->
+            <nav id="navMenu">
+                <a href="#" id="home">Home</a>
+                <a href="#"id="chamber">Chamber</a>
+                <a href="#" id="github">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/benedict-nwanze-1aaa561a0/" id="linkedIn">LinkedIn</a>
+            </nav>
         </div>
-        <button type="button" id="menu" aria-label="hamburger-menu"></button>
-        <!-- Hidden on mobile -->
-        <nav id="navMenu">
-
-            <a href="#" id="home">Home</a>
-            <a href="#"id="chamber">Chamber</a>
-            <a href="#" id="github">GitHub Profile</a>
-            <a href="#" id="linkedIn">LinkedIn</a>
-        </nav>
+       
     </header>
     <main>
         <section class="content">
