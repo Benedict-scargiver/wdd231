@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1f4a70;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+nav {
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+    margin: 0;
+}
+
+ nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav>a:hover {
+    background-color:#999da482;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+        
+.d-none {
+    display: none;
+}
+        
+.show {
+    display: flex;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 2.4rem;
+    right: 1.5rem;
+}
+        
+#menu::before {
+    content: "☰";
+}
+        
+#menu.open::before {
+    content: "X";
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+        
+.course-work, .location {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.location img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.certificate {
+    text-align: center;
+    padding: 20px;
+    background: #1f4a70;
+    color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.buttons button, .courses button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+}
+
+.cse { 
+    background: brown; color: white;
+}
+        
+.wdd { background: darkorange; color: white; 
+}
+    
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f4a70;
+    color: white;
+}
+
+       

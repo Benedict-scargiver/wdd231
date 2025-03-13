@@ -1,0 +1,20 @@
+@media (min-width: 320px) {
+    nav {
+        display: block;
+    }
+    
+    #menu {
+        display: none;
+    }
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .course-work, .location {
+        width: 40%;
+    }
+    .buttons button, .courses button {
+        width: auto;
+        display: inline-block;
+    }
+}
