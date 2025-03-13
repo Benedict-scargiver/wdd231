@@ -17,6 +17,15 @@ header {
     text-align: center;
 }
 
+h1{
+    background-color: #1f4a70;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+}
+
 .profile img {
     width: 90px;
     border-radius: 50%;
@@ -49,7 +58,12 @@ nav>a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 }
+
         
+.home {
+    text-align: left;
+    padding: 20px;
+}
 .d-none {
     display: none;
 }
@@ -90,6 +104,10 @@ nav>a:hover {
     width: 90%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+}
+
+.course-work {
+    min-height: auto;
 }
 
 .location img {
