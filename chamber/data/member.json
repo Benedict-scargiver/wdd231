@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Ecozar Technologies",
+    "address": "Venia Hub, 8 The Providence Street, Lekki Phase 1, Lagos, Nigeria",
+    "phone": "09099999231",
+    "website": "https://ecozartechnologies.com",
+    "image": "ecozar_logo.png",
+    "membership_level": "silver",
+    "industry": "Technology"
+  },
+  {
+    "name": "GreenFarms Nigeria",
+    "address": "20 Organic Way, Ikoyi, Lagos, Nigeria",
+    "phone": "08123456789",
+    "website": "https://www.greenfarmsnigeria.com",
+    "image": "greenfarms_logo.png",
+    "membership_level": "gold",
+    "industry": "Agriculture"
+  },
+  {
+    "name": "EXT Nigeria",
+    "address": "9th Floor, Eleganza Plaza, 634 Adeyemo Alakija Street, Victoria Island, Lagos, Nigeria",
+    "phone": "08134567890",
+    "website": "https://www.extnigeria.com",
+    "image": "ext_ng_logo.png",
+    "membership_level": "bronze",
+    "industry": "Finance"
+  },
+  {
+    "name": "Abax Consult",
+    "address": "Plot 15, Business Avenue, Ikeja, Lagos, Nigeria",
+    "phone": "08098765432",
+    "website": "https://www.abaxconsult.com",
+    "image": "abax_logo.png",
+    "membership_level": "gold",
+    "industry": "Consulting"
+  },
+  {
+    "name": "Urban Dishes Lagos",
+    "address": "12 Gourmet Street, Victoria Island, Lagos, Nigeria",
+    "phone": "07012345678",
+    "website": "https://www.urbandisheslagos.com",
+    "image": "urban_dishes_logo.png",
+    "membership_level": "gold",
+    "industry": "Restaurant"
+  },
+  {
+    "name": "NextGen Tech Nigeria",
+    "address": "Suite 5, Tech Boulevard, Yaba, Lagos, Nigeria",
+    "phone": "09087654321",
+    "website": "https://www.nextgenng.com",
+    "image": "nextgen_ng_logo.png",
+    "membership_level": "silver",
+    "industry": "Technology"
+  },
+  {
+    "name": "Vista Properties",
+    "address": "11 Property Lane, Lekki Phase 2, Lagos, Nigeria",
+    "phone": "08109876543",
+    "website": "https://www.vistapropertiesng.com",
+    "image": "vista_properties_logo.png",
+    "membership_level": "bronze",
+    "industry": "Real Estate"
+  },
+  {
+    "name": "Lagos Innovators Hub",
+    "address": "Plot 21, Innovation Street, Surulere, Lagos, Nigeria",
+    "phone": "09012345678",
+    "website": "https://www.lagosinnovatorshub.com",
+    "image": "lagos_innovators_logo.png",
+    "membership_level": "silver",
+    "industry": "Co-Working Space"
+  }
+  
+]

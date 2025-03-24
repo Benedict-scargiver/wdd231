@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -47,7 +44,7 @@ nav ul {
     margin: 0;
 }
 
- nav a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;

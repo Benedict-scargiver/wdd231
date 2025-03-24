@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development - Benedict Nwanze</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development, Benedict Nwanze">
+    <meta name="author" content="Benedict Nwanze"> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/dates.js" defer> </script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/member.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/lagos chamber of commerce.png" alt="Profile Picture">
+            <h1>Lagos State Chamber of Commerce</h1>
+            <button type="button" id="menu" aria-label="hamburger-menu"></button>
+            <!-- Hidden on mobile -->
+            <nav id="navMenu">
+                <a href="#" id="home">Home</a>
+                <a href="#" id="chamber">Chamber</a>
+                <a href="#" id="github">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/benedict-nwanze-1aaa561a0/" id="linkedIn">LinkedIn</a>
+            </nav>
+        </div>
+       
+    </header>
+    <main>
+    <div class="view-toggle">
+        <button onclick="toggleView('grid')">⏹️Grid</button>
+        <button onclick="toggleView('list')">📄List</button>
+    </div>
+    
+    <div id="member-container" class="grid-view"></div>
+                
+                
+    <footer>
+    <p>&copy; <span id="currentyear"></span> 💒Benedict Nwanze, Lagos State, Nigeria.  💒 </p>  
+    <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
