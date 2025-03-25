@@ -34,7 +34,7 @@ function displayMembers(members) {
             `;
         } else {
             memberCard.innerHTML = `
-                <img src="data/${member.image}" alt="${member.name}" class="member-image">
+                <img src="${member.imagesrc}" alt="${member.name}" class="member-image">
                 <h3>${member.name}</h3>
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
