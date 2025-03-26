@@ -71,7 +71,9 @@ nav ul li a {
 }
 
 nav a:hover {
-    border-bottom: 1px solid #f6f8f4;
+    background-color:#999da482;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 #hamburgerBtn span:nth-child(1) {
