@@ -1,29 +1,28 @@
 @media screen and (min-width: 320px) {
-    header {
-        justify-content: flex-start;
-        padding: 20px;
+    body {
+        margin: 0;
     }
 
-    .profile {
-        width: auto;
-        flex-direction: row;
-        text-align: left;
-    }
-
-    #menu {
+    nav button {
         display: none;
     }
 
-    nav {
-        display: flex !important;
-        position: static;
+    nav ul {
+        display: flex;
         flex-direction: row;
-        gap: 20px;
-        justify-content: flex-end;
+        padding: 1rem;
     }
 
-    nav a {
-        padding: 10px 15px;
+    .hamburger {
+        display: none;
+    }
+
+    nav ul li a {
         border: none;
     }
+
+    
+   
+
+    
 }

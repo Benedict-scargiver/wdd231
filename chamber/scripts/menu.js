@@ -1,7 +1,7 @@
-const hamburgerIcon = document.getElementById('menu');
-const navigation = document.getElementById('navMenu');
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');
+}
 
-hamburgerIcon.addEventListener('click', function () {
-    navigation.classList.toggle('show');
-    hamburgerIcon.classList.toggle('open');
-});
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;
