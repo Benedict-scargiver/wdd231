@@ -1,5 +1,5 @@
-// Get the current year and update the <span> tag  
-document.getElementById('currentyear').textContent = new Date().getFullYear();  
+const last_modif = new Date(document.lastModified);
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-// Get the last modified date and update the <p> tag with id "lastModified"  
-document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
+const currentYear = new Date().getFullYear();
+document.querySelector('.currentYear').textContent = currentYear;

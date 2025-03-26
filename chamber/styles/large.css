@@ -21,8 +21,25 @@
         border: none;
     }
 
-    
-   
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
 
     
 }
