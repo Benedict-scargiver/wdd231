@@ -6,9 +6,8 @@
     <title>WDD 231 - Web Frontend Development - Benedict Nwanze</title>
     <meta name="description" content="WDD 231 - Web Frontend Development, Benedict Nwanze">
     <meta name="author" content="Benedict Nwanze"> 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/sm.css">
+    <link rel="stylesheet" href="styles/la.css">
     <script src="scripts/dates.js" defer> </script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/member.js" defer></script>
@@ -21,8 +20,8 @@
 <body>
     <header>
         <div class="profile">
-            <img src="images/lagos chamber of commerce.png" alt="Profile">
-            <h1>Lagos chamber of Commerce</h1>
+            <img src="week1/images/benny.jpg" alt="Profile Picture">
+            <h1>Benedict Nwanze</h1>
             <button type="button" id="menu" aria-label="hamburger-menu"></button>
             <!-- Hidden on mobile -->
             <nav id="navMenu">
@@ -34,17 +33,44 @@
         </div>
        
     </header>
-    <main>  </main>
-    <div class="view-toggle">
-        <button onclick="toggleView('grid')">⏹️Grid</button>
-        <button onclick="toggleView('list')">📄List</button>
-    </div>
-    
-    <div id="member-container" class="grid-view"></div>
+    <main>
+        <h2 class="home">Home</h2>
+        <section class="content">
+            <div class="course-work">
+                <h1>Course Work</h1>
                 
-    <img src="images/lagos chamber of commerce.png" alt="Profile">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="location">
+                <h1>Lagos, Nigeria</h1>
+                <img src="week1/images/beninart.webp" alt="Ida">
+                <p>Queen Ida's Mask</p>
+            </div>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="buttons">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+
+            <div class="courses">
+                <button class="cse">CSE 110</button>
+                <button class="wdd">WDD 130</button>
+                <button class="cse">CSE 111</button>
+                <button class="cse">CSE 210</button>
+                <button class="wdd">WDD 131</button>
+                <button class="wdd">WDD 231</button>
+            </div>
+        </section>
+    </main>
     <footer>
-    <p>&copy; <span id="currentyear"></span> 💒Benedict Nwanze, Lagos State, Nigeria. 💒 </p>  
+    <p>&copy; <span id="currentyear"></span> 💒Benedict Nwanze, Lagos State, Nigeria.  💒 </p>  
     <p id="lastModified"></p>
     </footer>
 </body>

@@ -1,40 +1,29 @@
-@media (min-width: 320px) {
-    nav {
-        display: block;
+@media screen and (min-width: 320px) {
+    header {
+        justify-content: flex-start;
+        padding: 20px;
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        background-color: #f4f4f4;
-    }
-    
     .profile {
-        display: flex;
-        align-items: center;
+        width: auto;
+        flex-direction: row;
+        text-align: left;
     }
-    
-    .profile img {
-        width: 60px;
-        height: auto;
-        margin-right: 10px;
-    }
-    
-    .profile h1 {
-        font-size: 18px;
-        text-align: center;
-        margin: 0;
-    }
-    
+
     #menu {
         display: none;
     }
-    
 
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+    }
 
-    
-
-   
+    nav a {
+        padding: 10px 15px;
+        border: none;
+    }
 }
