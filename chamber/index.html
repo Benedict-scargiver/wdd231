@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/dates.js" defer> </script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/member.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,23 +38,49 @@
             <nav >
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="discover.html">Discover</a></li>
                 </ul>
             </nav>
     </header>
     <main>
-        <h1>Lagos
-            Chamber of Commerce
-        </h1> 
-        <div class="view-toggle">
-            <button onclick="toggleView('grid')">⏹️Grid</button>
-            <button onclick="toggleView('list')">📄List</button>
+        <div class="tab1">
+            <h1>Welcome to Lagos Chamber of Commerce</h1>
+            <a href="join.html">Join The Chamber</a>
+            <img src="images/lagos_hero1.jpg" alt="Highland City">
         </div>
-        <div id="member-container" class="grid-view"></div> 
-    </main>      
+        <div class="home-grid" >
+            <div class="tab2">
+                <h2>Events</h2>
+                <p>Join us for the grand opening of The Oasis of the Sky , Thursday at 7:00 p.m.</p>
+                <a href="#">more info...</a>
+            </div>
+            <div class="weather">
+                <h2 class="weather-p">Weather</h2>
+                <div class="sign">
+                    <img id="weather-icon">
+                </div>
+                <div class="weather-info">
+                    <p id="current-temp"></p>
+                    <p class="weather-desc"></p>
+                </div>
+            </div>
+           
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-days">
+                    <p class="day-one"></p>
+                    <p class="day-two"></p>
+                    <p class="day-three"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="spotlight-container"></div>
+    </main>
 
     <footer>
         <div id="box1">

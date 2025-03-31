@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Perkins">
+    <meta name="description" content="Highland Chamber of Commerce is a local business directory for Highland, Utah. It provides information about local businesses and services.">
+    <title>Highland Chamber of Commerce</title>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Highland Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta
+        property="og:description"
+        content="Highland Chamber of Commerce is a local business directory for Highland, Utah. It provides information about local businesses and services.">
+    <meta property="og:image" content="https://macperkins.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://macperkins.github.io/wdd231/chamber/index.html">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src='images/chamber-logo.png' alt='Highland City Chamber logo'>
+                <p>Highland
+                    Chamber of Commerce
+                </p>
+        </a>
+            <nav >
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="tab1">
+            <h1>Welcome to Highland's Chamber of Commerce</h1>
+            <a href="join.html">Join The Chamber</a>
+            <img src="images/hero.jpg" alt="Highland City" sizes="50vw"
+                srcset="images/hero-small.webp 400w,
+                        images/hero-medium.webp 800w,
+                        images/hero-large.webp 1200w"
+            >
+        </div>
+        <div class="home-grid">
+            <div class="tab2">
+                <h2>Events</h2>
+                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
+                <a href="#">more info...</a>
+            </div>
+            <div class="tab3">
+                <h2>Current Weather</h2>
+                <figure>
+                    <div class="weather">
+                        <img id="weather-icon" src="#" alt="#">
+                        <p><span id="current-temp"></span></p>
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="tab3">
+                <h2>Weather Forecast</h2>
+                <div>
+                    <p><span id="dayOne"></span></p>
+                    <p><span id="dayTwo"></span></p>
+                    <p><span id="dayThree"></span></p>
+                </div>
+            </div>
+        </div>
+            <div class="tab5">
+                <div id="sub-tab1">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+                <div id="sub-tab2">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+                <div id="sub-tab3">
+                    <h2 class="company">#</h2>
+                    <img class="tab-img" src="#" alt="#">
+                    <div>
+                        <a class="website" href="#">#</a>
+                        <p class="phone-number">#</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div id="box1">
+            <div id="sub-box1">
+                <p><strong>Highland Chamber of Commerce</strong></p>
+                <p>123 Random address rd, Highland UT</p>
+            </div>
+            <div id="sub-box2">
+                <p>info@Highlandcc.com</p>
+                <p>+1(801) 123-4567</p>
+            </div>
+        </div>
+        <div id="links">
+            <a href="https://www.youtube.com/" class="social-link"><img src="images/yt-logo.avif" alt="YouTube Logo"></a>
+            <a href="https://www.twitter.com/" class="social-link"><img src="images/logo-white.png" alt="Twitter Logo"></a>
+            <a href="https://www.linkedin.com/" class="social-link"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+        </div>
+        <div id="box2">
+            <div id="small">
+                <p>&copy; <span class="currentYear"></span> - Highland Chamber</p>
+                <p><strong>Matthew Perkins</strong></p>
+                <p>WDD 231 Project</p>
+            </div>
+            <p id="larger">&copy; <span class="currentYear"></span> - Highland Chamber | <strong>Matthew Perkins</strong> | WDD 231 Project |</p>
+            <div>
+                <p id="last-modified">Last Modified:</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+tab3 figcaption {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    font-size: 1.25rem;
+}
+
+.tab3 .weather {
+    display: flex;
+}
+
+.tab3 .weather img {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.tab3 .weather p {
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
+}
+.tab3 div p, .tab3 h2{
+    text-align: center;
+    color: black;
+}
