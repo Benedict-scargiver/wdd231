@@ -37,12 +37,12 @@ async function apiFetch() {
     }
 }
 
-// Display Data
+
 function displayResults(currentData, forecastData) {
-    // Update current weather details
     currentTemp.innerHTML = `${Math.round(currentData.main.temp)}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`;
-    const desc = currentData.weather[0].description;
+    let desc = currentData.weather[0].description;
+    desc = desc.charAt(0).toUpperCase() + desc.slice(1);
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", desc);
     weatherDesc.textContent = desc;
@@ -53,7 +53,6 @@ function displayResults(currentData, forecastData) {
     day2.innerHTML = `Tomorrow: ${Math.round(forecastArray[1].day.avgtemp_c)}&deg;C |`;
     day3.innerHTML = `The Day After: ${Math.round(forecastArray[2].day.avgtemp_c)}&deg;C`;
 }
-
 // Show banner on specific days
 function showBannerOnSpecificDays() {
     const currentDay = new Date().getDay();
