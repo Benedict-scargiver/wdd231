@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development - Benedict Nwanze</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development, Benedict Nwanze">
+    <meta name="author" content="Benedict Nwanze"> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/dates.js" defer> </script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Lagos Chamber of Commerce - Directory">
+        <meta property="og:type" content="website">
+        <meta
+          property="og:description"
+          content="Lagos Chamber of Commerce is a local business directory for Lagos, Nigeria. It provides information about local businesses and services in Lagos Nigeria.">
+        <meta property="og:image" content="https://github.com/Benedict-scargiver/wdd231/chamber/images/chamberimage.jpg">
+        <meta property="og:url" content="https://benedict-scargiver.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src='images/chamberimage.jpg' alt='Lagos Chamber logo'>
+                <p><strong>
+                    Lagos
+                    Chamber of Commerce
+                </strong></p>
+        </a>
+            <nav >
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="form-tab">
+        <form method="get" action="thankyou.html" onsubmit="setDateTime()">
+            <h1>Join Our Chamber!</h1>
+            <fieldset>
+                <label class="top">First Name *<input type="text" name="fname" required></label>
+                <label class="top">Last Name *<input type="text" name="lname" required></label>
+                <label class="top">Job Title<input class="organizational-title" type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
+                <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="+234 "></label>
+                <label class="top">Business Name *<input type="text" name="bname" required autocomplete="organization"></label>
+
+                <label class="top">Membership Level *
+                    <select name="subject">
+                        <option>Please Select v</option>
+                    <option value="non-profit">Non-Profit</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    </select>
+                </label>
+
+                <label class="bDescript">Business Description<textarea name="bDescript"></textarea></label>
+
+                <input type="hidden" id="dateTime" name="dateTime"> 
+
+                <input type="submit" value="Join Us!" class="submitBtn">
+
+            </fieldset>
+        </form>
+        <div class="membership-tab">
+            <h2>Membership Levels</h2>
+            <section class="membership-cards">
+                <h3>Non Profit Membership Level</h3>
+                <button class="details-btn" data-level="nonprofit">Details</button>
+            </section>
+            <dialog id="nonprofit-details">
+                <h3>#</h3>
+                <ul></ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+
+            <section class="membership-cards">
+                <h3>Bronze Membership Level</h3>
+                <button class="details-btn" data-level="bronze">Details</button>
+            </section>
+            <dialog id="bronze-details">
+                <h3>#</h3>
+                <ul></ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+
+            <section class="membership-cards">
+                <h3>Silver Membership Level</h3>
+                <button class="details-btn" data-level="silver">Details</button>
+            </section>
+            <dialog id="silver-details">
+                <h3>#</h3>
+                <ul></ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+
+            <section class="membership-cards">
+                <h3>Gold Membership Level</h3>
+                <button class="details-btn" data-level="gold">Details</button>
+            </section>
+            <dialog id="gold-details">
+                <h3>#</h3>
+                <ul></ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div id="box1">
+            <div id="sub-box1">
+                <p><strong>Lagos Chamber of Commerce</strong></p>
+                <p>1 Idowu Taylor Street, Lagos, Nigeria.</p>
+            </div>
+            <div id="sub-box2">
+                <p>lcci@lagoschamber.com</p>
+                <p>+234 1 277 1557</p>
+            </div>
+        </div>
+        <div id="links">
+            <a href="https://www.youtube.com/" class="social-link"><img src="images/youtube.jpg" alt="YouTube Logo"></a>
+            <a href="https://www.twitter.com/" class="social-link"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            <a href="https://www.linkedin.com/" class="social-link"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+        </div>
+        <div id="box2">
+            <div id="small">
+                <p>&copy; <span class="currentYear"></span> - Lagos Chamber</p>
+                <p><strong>Benedict Nwanze</strong></p>
+                <p>WDD 231 Project</p>
+            </div>
+            <p id="larger">&copy; <span class="currentYear"></span> - Lagos Chamber | <strong>Benedict Nwanze</strong> | WDD 231 Project |</p>
+            <div>
+                <p id="lastModified">Last Modified:</p>
+            </div>
+        </div>
+    
+    </footer>
+</body>
+</html>
