@@ -303,6 +303,7 @@ footer #links a {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 /* Events section */
@@ -413,7 +414,7 @@ footer #links a {
 }
 
 .mem a {
-    color: #1a73e8;
+    color: #4f75a7;
     text-decoration: none;
 }
 
@@ -423,9 +424,7 @@ footer #links a {
 
 
 /* Join section */
-.form-tab {
-    display: flex;
-}
+
 main div.form-tab {
     display: flex;
     flex-direction: column;
@@ -474,7 +473,7 @@ form label.bDescript textarea, form label.request textarea {
 
 form input.submitBtn {
     border: none;
-    background-color: #577399;
+    background-color:#003366;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -485,11 +484,11 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: 6px solid red;
+    border-left: 6px solid #003366; 
 }
 
 form label.top input:required:valid {
-    border-left: 6px solid #324c86;
+    border-left: 6px solid #003366;
 }
 
 .membership-cards {
@@ -512,10 +511,10 @@ dialog {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
     padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0 3rem #777;
+    background-color: #ffffff;
+    box-shadow: 0 0 3rem #777777;
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -538,7 +537,7 @@ dialog button {
     padding: 0.5rem 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.25rem;
-    background-color: #324c86;
+    background-color: #003366;
     color: white;
     cursor: pointer;
 }

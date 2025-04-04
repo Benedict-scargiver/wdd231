@@ -24,6 +24,17 @@
     .home-grid {
         display: flex;
     }
+
+    .form-tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+    
     
 
     footer {
