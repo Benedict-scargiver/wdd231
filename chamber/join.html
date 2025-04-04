@@ -47,80 +47,79 @@
     <main>
         <div class="form-tab">
             <form method="get" action="thankyou.html" onsubmit="setDateTime()">
-     
                 <h1>Join Our Chamber!</h1>
-            
                 <fieldset>
-                
                     <label class="top">First Name *<input type="text" name="fname" required></label>
                     <label class="top">Last Name *<input type="text" name="lname" required></label>
                     <label class="top">Organization Title<input class="organizational-title" type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
                     <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com" required></label>
                     <label class="top">Phone<input type="tel" name="phone" placeholder="+234 "></label>
                     <label class="top">Business Name *<input type="text" name="bname" required autocomplete="organization"></label>
-
+    
                     <label class="top">Membership Level *
                         <select name="subject">
                             <option>Click to Select </option>
                             <option value="gold">Gold</option>
-                            <option value="silver">Silver</optio>
+                            <option value="silver">Silver</option>
                             <option value="bronze">Bronze</option>
                             <option value="non-profit">Non-Profit</option>
                         </select>
                     </label>
-
+    
                     <label class="bDescript">Business Description<textarea name="bDescript"></textarea></label>
-
+    
                     <input type="hidden" id="dateTime" name="dateTime"> 
-
+    
                     <input type="submit" value="Join Us!" class="submitBtn">
-
+    
                 </fieldset>
             </form>
-        <div class="membership-tab">
-            <h2>Membership Levels</h2>
-            <section class="membership-cards">
-                <h3>Non Profit Membership Level</h3>
-                <button class="details-btn" data-level="nonprofit">Details</button>
-            </section>
-            <dialog id="nonprofit-details">
-                <h3>#</h3>
-                <ul></ul>
-                <button class="close-btn">Close</button>
-            </dialog>
-
-            <section class="membership-cards">
-                <h3>Bronze Membership Level</h3>
-                <button class="details-btn" data-level="bronze">Details</button>
-            </section>
-            <dialog id="bronze-details">
-                <h3>#</h3>
-                <ul></ul>
-                <button class="close-btn">Close</button>
-            </dialog>
-
-            <section class="membership-cards">
-                <h3>Silver Membership Level</h3>
-                <button class="details-btn" data-level="silver">Details</button>
-            </section>
-            <dialog id="silver-details">
-                <h3>#</h3>
-                <ul></ul>
-                <button class="close-btn">Close</button>
-            </dialog>
-
-            <section class="membership-cards">
-                <h3>Gold Membership Level</h3>
-                <button class="details-btn" data-level="gold">Details</button>
-            </section>
-            <dialog id="gold-details">
-                <h3>#</h3>
-                <ul></ul>
-                <button class="close-btn">Close</button>
-            </dialog>
-           </div>
+            <div class="membership-tab">
+                <h2>Membership Levels</h2>
+                <section class="membership-cards">
+                    <h3>Non Profit Membership Level</h3>
+                    <button class="details-btn" data-level="nonprofit">Details</button>
+                </section>
+                <dialog id="nonprofit-details">
+                    <h3>#</h3>
+                    <ul></ul>
+                    <button class="close-btn">Close</button>
+                </dialog>
+    
+                <section class="membership-cards">
+                    <h3>Bronze Membership Level</h3>
+                    <button class="details-btn" data-level="bronze">Details</button>
+                </section>
+                <dialog id="bronze-details">
+                    <h3>#</h3>
+                    <ul></ul>
+                    <button class="close-btn">Close</button>
+                </dialog>
+    
+                <section class="membership-cards">
+                    <h3>Silver Membership Level</h3>
+                    <button class="details-btn" data-level="silver">Details</button>
+                </section>
+                <dialog id="silver-details">
+                    <h3>#</h3>
+                    <ul></ul>
+                    <button class="close-btn">Close</button>
+                </dialog>
+    
+                <section class="membership-cards">
+                    <h3>Gold Membership Level</h3>
+                    <button class="details-btn" data-level="gold">Details</button>
+                </section>
+                <dialog id="gold-details">
+                    <h3>#</h3>
+                    <ul></ul>
+                    <button class="close-btn">Close</button>
+                </dialog>
+            </div>
         </div>
+
     </main>
+    
 
     <footer>
         <div id="box1">
