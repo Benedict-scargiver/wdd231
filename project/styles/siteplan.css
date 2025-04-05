@@ -72,6 +72,9 @@ margin: 1rem auto;
 border: 1px solid #ccc;
 border-radius: 8px;
 }
+.wireframe p{
+    text-align: center;
+}
 
 footer {
     text-align: center;
