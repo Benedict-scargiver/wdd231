@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArtVerse - Explore Digital Art</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      color: #1A1A1A;
+    }
+
+    header {
+      background-color: #005F73;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .hero {
+      background-color: #94D2BD;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .hero h2 {
+      margin: 0 0 1rem;
+      color: #1A1A1A;
+    }
+
+    .gallery-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .art-card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    .art-card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #005F73;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    button {
+      background-color: #0A9396;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00777a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Art Arch</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Submit Art</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Explore Digital Masterpieces</h2>
+      <p>Discover, share, and connect with digital artists around the world.</p>
+      <button>Browse Gallery</button>
+    </section>
+
+    <section class="gallery-preview">
+      <div class="art-card">
+        <img src="https://via.placeholder.com/200x150" alt="Artwork 1">
+        <p><strong>Title:</strong> Abstract Dreams</p>
+        <p><strong>Artist:</strong> Beneco N</p>
+      </div>
+      <div class="art-card">
+        <img src="https://via.placeholder.com/200x150" alt="Artwork 2">
+        <p><strong>Title:</strong> Digital Roar</p>
+        <p><strong>Artist:</strong> Felix S Sea</p>
+      </div>
+      <div class="art-card">
+        <img src="https://via.placeholder.com/200x150" alt="Artwork 3">
+        <p><strong>Title:</strong> Neon Pulse</p>
+        <p><strong>Artist:</strong> Samuel A. Akins</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Art Arch. All rights reserved.</p>
+  </footer>
+</body>
+</html>

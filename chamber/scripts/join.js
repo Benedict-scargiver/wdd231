@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Advertising: ✅",
                 "Event Discounts: ❌",
                 "City Sponsorship: ❌",
-                "Extra Fees: ₦10"
+                "Extra Fees: ₦10,000"
             ]
         },
         "silver": {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Advertising: ✅",
                 "Event Discounts: ✅",
                 "City Sponsorship: ❌",
-                "Extra Fees: ₦15"
+                "Extra Fees: ₦15,000"
             ]
         },
         "gold": {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Advertising: ✅",
                 "Event Discounts: ✅",
                 "City Sponsorship: ✅",
-                "Extra Fees: ₦25"
+                "Extra Fees: ₦25,000"
             ]
         }
     };
