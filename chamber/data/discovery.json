@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Lekki Centre",
+            "address": "Lekki Peninsula, Lagos, Nigeria",
+            "imageURL": "images/lekki.webp",
+            "description": "A peaceful natural reserve where you can experience wildlife, walk on Africa's longest canopy walkway, and enjoy picnic spots amidst lush greenery."
+        },
+        {
+            "name": "Nike Art Gallery",
+            "address": "No. 2, Oba Yekini Elegushi Rd, Ikate Elegushi, Lekki, Lagos, Nigeria",
+            "imageURL": "images/nike.webp",
+            "description": "A vibrant art gallery showcasing contemporary Nigerian art, crafts, and textiles from renowned artists, and a hub for cultural inspiration."
+        },
+        {
+            "name": "Freedom Park",
+            "address": "Broad Street, Lagos Island, Lagos, Nigeria",
+            "imageURL": "images/freedompark.webp",
+            "description": "This historic park, formerly a colonial prison, is now a recreational and cultural site for concerts, exhibitions, and outdoor relaxation."
+        },
+        {
+            "name": "Elegushi Beach",
+            "address": "Lekki, Lagos, Nigeria",
+            "imageURL": "images/elegusi.webp",
+            "description": "A lively private beach known for its fun atmosphere, local cuisine, music, and opportunities for relaxation or partying by the ocean."
+        },
+        {
+            "name": "National Museum Lagos",
+            "address": "Onikan, Lagos Island, Lagos, Nigeria",
+            "imageURL": "images/cathedral.webp",
+            "description": "A museum showcasing Nigeria's rich history and cultural artifacts, including traditional art, sculptures, and archaeological exhibits."
+        },
+        {
+            "name": "Terra Kulture",
+            "address": "1376 Tiamiyu Savage St, Victoria Island, Lagos, Nigeria",
+            "imageURL": "images/kulture.webp",
+            "description": "A cultural center offering a mix of art, theatre, food, and exhibitions, promoting Nigerian heritage and creativity."
+        },
+        {
+            "name": "Ikeja City Mall",
+            "address": "Obafemi Awolowo Way, Ikeja, Lagos, Nigeria",
+            "imageURL": "images/ikeja.webp",
+            "description": "A modern shopping mall offering retail therapy, dining options, entertainment, and a lively social atmosphere."
+        },
+        {
+            "name": "Third Mainland Bridge",
+            "address": "Connecting Lagos Island and the Mainland, Lagos, Nigeria",
+            "imageURL": "images/bridge.webp",
+            "description": "One of the longest bridges in Africa, providing stunning views of Lagos' skyline and a vital route connecting the city."
+        }
+    ]
+}

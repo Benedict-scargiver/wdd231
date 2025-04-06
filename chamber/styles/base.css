@@ -577,3 +577,144 @@ dialog button:hover {
     border-radius: 10px;      
 }
 
+
+/* ----------Discover Page---------- */
+
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    grid-gap: 1rem;
+    margin: 1rem auto;
+    max-width: 1250px;
+}
+
+.discover-grid p, .discover-grid button {
+    font-family: 'Kanit', sans-serif;
+}
+
+.place-card {
+    padding: 1rem;
+    border: 2px solid #777777;
+    box-shadow: 0 0 7px #777777;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.place-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.place-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.place-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.place-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.place-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.place-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.place-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.place-card:nth-child(8) {
+    grid-area: card8;
+}
+
+.place-card figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.place-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.visit-tab {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #003366;
+    color: #f9f9f9;
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 640px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .place-card img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .place-card img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    .place-card img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .place-card img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+}
+
