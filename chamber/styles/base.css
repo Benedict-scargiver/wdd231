@@ -493,18 +493,52 @@ form label.top input:required:valid {
 
 .membership-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
+    grid-template-columns: 1fr; /* Always one card per row on small screens */
+    gap: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
     border: 1px solid grey;
     box-shadow: 0 0 7px grey;
+    max-width: 100%;
+    box-sizing: border-box;
 }
+  
 
-.membership-cards h3 {
-    margin: 0;
-    margin-bottom: 1rem;
+  @media screen and (min-width: 600px) {
+    .membership-cards {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+.membership-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    word-wrap: break-word; 
+    overflow: hidden;
+}
+  
+.membership-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    text-align: center;
+}
+  
+.membership-card button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #005F73;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+  
+.membership-card button:hover {
+    background-color: #003f4e;
 }
 
 dialog {
