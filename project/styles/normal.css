@@ -1,0 +1,61 @@
+@media screen and (min-width: 650px) {
+    body {
+        margin: 0;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul li a {
+        border: none;
+    }
+
+    .home-grid {
+        display: flex;
+    }
+
+    main div.form-tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+    
+    
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    
+}

@@ -18,6 +18,21 @@
       padding: 1rem 2rem;
     }
 
+    .wayfinder {
+      background-color: #E0FBFC;
+      padding: 0.75rem 2rem;
+      font-size: 0.9rem;
+      color: #1A1A1A;
+    }
+    .wayfinder a {
+      text-decoration: none;
+      color: #005F73;
+    }
+    
+    .wayfinder a:hover {
+      text-decoration: underline
+    }
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -73,10 +88,12 @@
     }
 
     .art-card img {
+      display: block;
+      margin: 0 auto 0.5rem;
       max-width: 100%;
       height: auto;
       display: block;
-      margin-bottom: 0.5rem;
+      
     }
 
     footer {
@@ -114,6 +131,10 @@
     </nav>
   </header>
 
+  <section class="wayfinder">
+    <p><a href="#">Home</a> / Explore</p>
+  </section>
+
   <main>
     <section class="hero">
       <h2>Explore Digital Masterpieces</h2>
@@ -123,7 +144,7 @@
 
     <section class="gallery-preview">
       <div class="art-card">
-        <img src="https://via.placeholder.com/200x150" alt="Artwork 1">
+        <img src="images/bridge.webp" alt="Artwork 1">
         <p><strong>Title:</strong> Abstract Dreams</p>
         <p><strong>Artist:</strong> Beneco N</p>
       </div>
@@ -141,7 +162,32 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Art Arch. All rights reserved.</p>
+    <div id="box1">
+      <div id="sub-box1">
+          <p><strong>Lagos Chamber of Commerce</strong></p>
+          <p>1 Idowu Taylor Street, Lagos, Nigeria.</p>
+      </div>
+      <div id="sub-box2">
+          <p>lcci@lagoschamber.com</p>
+          <p>+234 1 277 1557</p>
+      </div>
+  </div>
+  <div id="links">
+      <a href="https://www.youtube.com/" class="social-link"><img src="images/youtube.jpg" alt="YouTube Logo"></a>
+      <a href="https://www.twitter.com/" class="social-link"><img src="images/twitter.png" alt="Twitter Logo"></a>
+      <a href="https://www.linkedin.com/" class="social-link"><img src="images/linkedin.png" alt="LinkedIn Logo"></a>
+  </div>
+  <div id="box2">
+      <div id="small">
+          <p>&copy; <span class="currentYear"></span> - Lagos Chamber</p>
+          <p><strong>Benedict Nwanze</strong></p>
+          <p>WDD 231 Project</p>
+      </div>
+      <p id="larger">&copy; <span class="currentYear"></span> - Lagos Chamber | <strong>Benedict Nwanze</strong> | WDD 231 Project |</p>
+      <div>
+          <p id="lastModified">Last Modified:</p>
+      </div>
+  </div>
   </footer>
 </body>
 </html>
