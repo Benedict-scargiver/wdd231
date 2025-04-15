@@ -1,6 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     background-color: #F3F4F6;
 }
@@ -131,14 +131,158 @@ h1{
     color: #1A1A1A;
 }
 
-.wayfinder a {
-    text-decoration: none;
-    color: #005F73;
+.hero {
+    margin: 5px;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 5px grey;
 }
-  
-.wayfinder a:hover {
+
+.hero h1 {
+    position: absolute;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    padding: 25px;
+    font-size: 1rem;
+    text-shadow: 0 0 20px grey;
+}
+
+.hero a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 1000;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #005F73;
+    color: white;
+}
+
+.hero a:hover {
+    border-radius: 45px 45px;
+}
+
+.hero img {
+    padding: 0;
+    width: 100%;
+    height: 30%;
+}
+
+active {
+    font-weight: bold;
     text-decoration: underline;
 }
+
+.tab2, #sub-hero, #sub-tab2 {
+    background-color: #f6f8f4;
+    color: black;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px grey;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 20px;
+}
+  
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Tab Styles */
+  .tab2,
+  .weather,
+  .forecast {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tab2:hover,
+  .weather:hover,
+  .forecast:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Headings */
+  h2 {
+    margin-top: 0;
+    color: #0077cc;
+    font-size: 1.5rem;
+  }
+  
+  /* Weather Info */
+  .weather-info p,
+  .forecast-days p {
+    margin: 6px 0;
+    font-size: 1rem;
+  }
+  
+  .weather img {
+    max-width: 60px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .weather .sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .weather-info {
+    text-align: center;
+  }
+  
+  .forecast-days {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Mobile-first layout */
+  @media (max-width: 480px) {
+    .home-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .forecast-days {
+      text-align: center;
+    }
+  }
+  
+  /* Web/Desktop view */
+  @media (min-width: 768px) {
+    .home-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .forecast-days {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+}
+
+
+
+
 
 footer {
     display: flex;
@@ -177,3 +321,246 @@ footer #box2 #larger {
 footer #links a {
     margin: 1rem;
 }
+
+form {
+    background-color: white;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Form structure */
+  fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #005F73;
+  }
+  
+  /* Label & inputs */
+  label.text {
+    display: block;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  label.text input,
+  label.text textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox group */
+  fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.1);
+  }
+  
+  /* Submit button */
+  .submitBtn {
+    background-color: #005F73;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    background-color: #00788C;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    form {
+      padding: 1.2rem;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    .submitBtn {
+      width: 100%;
+    }
+  }
+
+/* Label & inputs */
+/* Responsive grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adapts to narrow screens */
+    gap: 1rem;
+}
+  
+  /* Card styling */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+  
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+  
+/* Buttons */
+button {
+    background-color: #005F73;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+button:hover {
+    background-color: #00788C;
+}
+  
+  /* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+  
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+  
+  /* List view tweaks */
+.list .card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0.75rem;
+    text-align: left;
+}
+  
+  /* Animation class */
+.card.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+/* ----- Thank You Page ----- */
+
+.thank-you-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f6f8f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.thank-you-section p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.thank-you-section button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f6f8f4;
+  background-color: #468faf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you-section button:hover {
+  background-color: #366d85;
+  transform: scale(1.05);
+}
+  
+  /* Responsive tweaks for 320px */
+@media screen and (max-width: 480px) {
+    .modal-content {
+      padding: 1rem;
+      width: 95%;
+    }
+  
+    button {
+      padding: 6px 10px;
+      font-size: 0.95rem;
+    }
+  
+    .card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .card p {
+      font-size: 0.95rem;
+    }
+  }

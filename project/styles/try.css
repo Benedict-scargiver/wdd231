@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Responsive grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adapts to narrow screens */
+  gap: 1rem;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  background-color: #005F73;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #00788C;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* List view tweaks */
+.list .card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Animation class */
+.card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Responsive tweaks for 320px */
+@media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
