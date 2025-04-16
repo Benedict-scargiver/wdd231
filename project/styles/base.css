@@ -473,12 +473,14 @@ button:hover {
 
 .modal-content {
   background-color: white;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 2rem;
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
   text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
   animation-name: zoomIn;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -487,20 +489,29 @@ button:hover {
 /* Keyframes for fade-in effect */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+      opacity: 0;
   }
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 /* Keyframes for zoom-in effect */
 @keyframes zoomIn {
   from {
-    transform: scale(0.8);
+      transform: scale(0.8);
   }
   to {
-    transform: scale(1);
+      transform: scale(1);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 320px) {
+  .modal-content {
+      width: 95%; /* Adjust the width for smaller screens */
+      padding: 1.5rem; /* Reduce padding for better fit */
+      font-size: 0.9rem; /* Adjust font size to fit content */
   }
 }
 
