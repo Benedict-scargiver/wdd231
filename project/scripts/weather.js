@@ -4,6 +4,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const weatherDesc = document.querySelector(".weather-desc");
 const day1 = document.querySelector(".day-one");
 const day2 = document.querySelector(".day-two");
+const artworkComment = document.querySelector(".artwork-comment"); // New selector for artwork comments
 
 // Constants
 const coord = { lat: 6.52, lon: 3.38 }; // Coordinates
@@ -49,6 +50,27 @@ function displayResults(currentData, forecastData) {
     const forecastArray = forecastData.forecast.forecastday;
     day1.innerHTML = `Today: ${Math.round(forecastArray[0].day.avgtemp_c)}&deg;C |`;
     day2.innerHTML = `Tomorrow: ${Math.round(forecastArray[1].day.avgtemp_c)}&deg;C`;
+
+    // Add artwork comment based on weather
+    addArtworkComment(desc);
+}
+
+function addArtworkComment(weatherDescription) {
+    let comment = "";
+
+    if (weatherDescription.includes("rain")) {
+        comment = "Rainy days remind us of Vincent van Gogh's 'Rain,' capturing the beauty of raindrops in motion.";
+    } else if (weatherDescription.includes("clear")) {
+        comment = "Clear skies bring to mind Claude Monet's 'Impression, Sunrise,' showcasing serene and bright landscapes.";
+    } else if (weatherDescription.includes("cloud")) {
+        comment = "Cloudy weather evokes J.M.W. Turner's 'Snow Storm,' with its dramatic depiction of swirling skies.";
+    } else if (weatherDescription.includes("snow")) {
+        comment = "Snowy scenes are beautifully portrayed in Andrew Wyeth's 'First Snow,' capturing the quiet elegance of winter.";
+    } else {
+        comment = "Weather has always inspired artists to create masterpieces that reflect its ever-changing moods.";
+    }
+
+    artworkComment.textContent = comment;
 }
 
 // Show banner on specific days

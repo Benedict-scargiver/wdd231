@@ -145,6 +145,7 @@ h1{
     left: 5px;
     padding: 25px;
     font-size: 1rem;
+    color: #ffffff;
     text-shadow: 0 0 20px grey;
 }
 
@@ -219,7 +220,7 @@ active {
   /* Headings */
   h2 {
     margin-top: 0;
-    color: #0077cc;
+    color: #005F73;
     font-size: 1.5rem;
   }
   
@@ -441,41 +442,68 @@ form {
   
 /* Buttons */
 button {
-    background-color: #005F73;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
+  background-color: #005F73;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
 }
   
 button:hover {
-    background-color: #00788C;
+  background-color: #00788C;
 }
   
-  /* Modal Styling */
+/* Modal styles */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 }
-  
+
 .modal-content {
-    background-color: white;
-    margin: 10% auto;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 }
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
   
 .close-button {
     position: absolute;

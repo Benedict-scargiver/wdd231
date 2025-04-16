@@ -21,6 +21,10 @@
         border: none;
     }
 
+    .hero h1 {
+        color: black;
+    }
+
     .home-grid {
         display: flex;
     }
