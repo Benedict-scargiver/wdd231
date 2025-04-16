@@ -61,12 +61,6 @@
             "description": "A heritage site showcasing Van Dyck's poignant portraits and historical themes."
         },
         {
-            "name": "The Calling of Saint Matthew",
-            "artist": "Caravaggio",
-            "imageURL": "images/arteleven.webp",
-            "description": "A museum dedicated to Caravaggio, featuring his dramatic use of chiaroscuro and revolutionary art."
-        },
-        {
             "name": "View of Haarlem with Bleaching Grounds",
             "artist": "Jacob van Ruisdael",
             "imageURL": "images/arttwelve.webp",
